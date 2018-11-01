@@ -2,8 +2,8 @@
   <div class="sidebar">
     <nav>
       <router-link class="home" to="/"><h1>Ryoji<br>Kono</h1></router-link>
-      <router-link to="/about">About</router-link>
-      <router-link to="/works">Works</router-link>
+      <router-link class="sidenav" to="/about">About</router-link>
+      <router-link class="sidenav" to="/works">Works</router-link>
     </nav>
     <div class="contact">
       <a href="#" class="twitter"><div class="button fab fa-twitter"></div></a>
@@ -20,6 +20,73 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style lang="scss" scoped>
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.sidebar{
+  position: relative;
+  height: 85vh;
+  margin: auto 0;
+}
+
+a{
+  color: #000;
+  text-decoration: none;
+}
+
+.sidenav{
+  padding: 12px 10px;
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  font-size: 1.5rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+.router-link-exact-active{
+  background-color: rgba(221,221,221,0.5);
+}
+
+.home{
+  background-color: #fff;
+  font-size: 2rem;
+  line-height: auto;
+}
+
+.contact{
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+  left: 50%;
+  font-size: 2rem;
+  transform: translateX(-50%);
+  display: inline-block;
+}
+
+.button{
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.twitter{
+  padding-left: 0;
+  &:hover{
+    color: rgb(29, 161, 242);
+  }
+}
+
+.facebook{
+  &:hover{
+    color: rgb(59, 89, 152);
+  }
+}
+
+.github{
+  &:hover{
+    color: #333;
+  }
+}
+
 </style>

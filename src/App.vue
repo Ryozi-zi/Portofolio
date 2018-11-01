@@ -20,7 +20,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -28,15 +28,17 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+
 }
 
 .container{
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 250px 1fr;
 }
 
 .sidebar{
   grid-column: 1/2;
+  border-right: 2px solid rgba(0, 0, 0, 0.5);
 }
 
 .main{
