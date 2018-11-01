@@ -1,7 +1,11 @@
 <template>
   <div id="app">
-    <side-bar></side-bar>
-    <router-view></router-view>
+    <div class="container">
+      <side-bar></side-bar>
+      <div class="main">
+        <router-view></router-view>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -24,5 +28,18 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+
+.sidebar{
+  grid-column: 1/2;
+}
+
+.main{
+  grid-column: 2/3;
 }
 </style>
