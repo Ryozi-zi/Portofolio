@@ -38,14 +38,15 @@ a{
   padding: 12px 20px;
   display: inline-block;
   width: 100%;
-  text-align: left;
   font-size: 1.5rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-.router-link-exact-active{
-  background-color: rgba(221,221,221,0.5);
+  -webkit-transition-property: background;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  &:hover{
+    background-color: #e0e0e0;
+  }
 }
 
 .home{

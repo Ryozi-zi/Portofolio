@@ -3,11 +3,13 @@ import Router from 'vue-router'
 
 import About from '../pages/About.vue'
 import Works from '../pages/Works.vue'
+import Home from '../pages/Home.vue'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
+    { path: '/', component: Home },
     { path: '/about', component: About },
     { path: '/works', component: Works }
   ]
