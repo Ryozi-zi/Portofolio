@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free-webfonts": "^1.0.9",
+    "reset-css": "^4.0.1",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
