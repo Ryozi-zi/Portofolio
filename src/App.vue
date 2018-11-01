@@ -3,7 +3,9 @@
     <div class="container">
       <side-bar></side-bar>
       <div class="main">
-        <router-view></router-view>
+        <transition mode="out-in">
+          <router-view />
+        </transition>
       </div>
     </div>
   </div>
@@ -31,6 +33,26 @@ export default {
 body{
   height: 100%;
   margin: 0;
+}
+
+.v-enter-active, .v-leave-active{
+  transition: opacity 0.7s;
+}
+
+.v-enter{
+  opacity: 0;
+}
+
+.v-enter-to{
+  opacity: 1;
+}
+
+.v-leave{
+  opacity: 1;
+}
+
+.v-leave-to{
+  opacity: 0;
 }
 
 .container{
