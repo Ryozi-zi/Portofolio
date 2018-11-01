@@ -6,9 +6,9 @@
       <router-link class="sidenav" to="/works">Works</router-link>
     </nav>
     <div class="contact">
-      <a href="#" class="twitter"><div class="button fab fa-twitter"></div></a>
-      <a href="#" class="facebook"><div class="button fab fa-facebook"></div></a>
-      <a href="#" class="github"><div class="button fab fa-github"></div></a>
+      <a href="https://twitter.com/Ryozi_zi" class="twitter" target="_blank"><div class="button fab fa-twitter"></div></a>
+      <a href="https://www.facebook.com/kouno.ryouzi" class="facebook" target="_blank"><div class="button fab fa-facebook"></div></a>
+      <a href="https://github.com/Ryozi-zi" class="github" target="_blank"><div class="button fab fa-github"></div></a>
     </div>
   </div>
 </template>
@@ -35,14 +35,13 @@ a{
 }
 
 .sidenav{
-  padding: 12px 10px;
+  padding: 12px 20px;
   display: inline-block;
   width: 100%;
   text-align: left;
   font-size: 1.5rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-weight: bold;
 }
 
 .router-link-exact-active{
@@ -51,8 +50,8 @@ a{
 
 .home{
   background-color: #fff;
-  font-size: 2rem;
-  line-height: auto;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
 }
 
 .contact{

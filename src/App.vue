@@ -27,8 +27,12 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  height: 85%;
-  margin: auto 0;
+  margin-top: 7.5vh;
+}
+
+body{
+  height: 100%;
+  margin: 0;
 }
 
 .container{
