@@ -1,9 +1,10 @@
 <template lang="html">
   <div class="sidebar">
+    <i id="close_button" @click="showChange" class="fa fa-close"></i>
     <nav>
-      <router-link class="home" to="/"><h1>Ryoji<br>Kono</h1></router-link>
-      <router-link class="sidenav" to="/about">About</router-link>
-      <router-link class="sidenav" to="/works">Works</router-link>
+      <router-link v-on:click.native="showChange" class="home" to="/"><h1>Ryoji<br>Kono</h1></router-link>
+      <router-link v-on:click.native="showChange" class="sidenav" to="/about">About</router-link>
+      <router-link v-on:click.native="showChange" class="sidenav" to="/works">Works</router-link>
     </nav>
     <div class="contact">
       <a href="https://twitter.com/Ryozi_zi" class="twitter" target="_blank"><div class="button fab fa-twitter"></div></a>
@@ -15,8 +16,12 @@
 
 <script>
 export default {
-  name: 'TheSideBar'
-
+  name: 'TheSideBar',
+  methods: {
+    showChange: function () {
+      this.$emit('change')
+    }
+  }
 }
 </script>
 
@@ -25,12 +30,9 @@ export default {
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 .sidebar{
-  position: relative;
-  height: 85vh;
+  display: none;
   margin: 0;
   text-align: center;
-  grid-column: 1/2;
-  border-right: 2px solid rgba(0, 0, 0, 0.5);
 }
 
 a{
@@ -93,9 +95,41 @@ a{
   }
 }
 
+#close_button{
+  display: inline-block;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 7.5vw;
+  right: 35px;
+}
+
 @media (max-width: 480px){
   .sidebar{
-    display: none;
+    width: 100vw;
+    height: 100vh;
+    border-style: none;
+    display: block;
+    position: fixed;
+    background-color: $baseColor;
+    top: 0;
+    z-index: 100;
+  }
+
+  .contact{
+    bottom: 25%;
+  }
+
+  h1{
+    margin-top: 90px;
+  }
+
+  .sidenav{
+    font-size: 2rem;
+    padding: 16px 20px;
+  }
+
+  .contact{
+    font-size: 3rem;
   }
 }
 </style>

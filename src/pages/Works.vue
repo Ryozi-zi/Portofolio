@@ -20,7 +20,12 @@ export default {
       works: [
         { id: 1,
           name: 'This Portofolio site',
-          content: 'Vue.jsを学びSPAでポートフォリオサイトを作ってみたいと思い作成しました。'}
+          content: 'Vue.jsを学びSPAでポートフォリオサイトを作ってみたいと思い作成しました。'},
+        {
+          id: 2,
+          name: 'Working in Progress',
+          content: 'これからまだまだ作成していきます。'
+        }
       ]
     }
   }

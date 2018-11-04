@@ -21,7 +21,7 @@ export default {
 
 @media (max-width: 480px){
   .work-box{
-    margin: 0 auto;
+    margin: 10px auto;
   }
 }
 </style>
