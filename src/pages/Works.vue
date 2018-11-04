@@ -1,17 +1,59 @@
 <template lang="html">
   <div class="works">
-    <h1>Works</h1>
-    <h2>working in progress</h2>
+    <h1 class="title">Works</h1>
+    <div class="work-boxes">
+      <box v-for='work in works' :contents="work" v-bind:key="work.id">
+      </box>
+    </div>
   </div>
 </template>
 
 <script>
+import box from '../components/Box.vue'
+
 export default {
+  components: {
+    box
+  },
+  data () {
+    return {
+      works: [
+        { id: 1,
+          name: 'This Portofolio site',
+          content: 'Vue.jsを学びSPAでポートフォリオサイトを作ってみたいと思い作成しました。'},
+        {
+          id: 2,
+          name: 'none',
+          content: 'none'
+        },
+        {
+          id: 3,
+          name: 'none',
+          content: 'none'
+        }
+      ]
+    }
+  }
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+@import "../assets/styles/mixins.scss";
+
 .works{
-  background-color: #fff;
+  @include container;
+}
+
+.work-boxes{
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.title{
+  @include title;
 }
 </style>
