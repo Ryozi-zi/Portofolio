@@ -26,7 +26,10 @@ export default {
 .sidebar{
   position: relative;
   height: 85vh;
-  margin: auto 0;
+  margin: 0;
+  text-align: center;
+  grid-column: 1/2;
+  border-right: 2px solid rgba(0, 0, 0, 0.5);
 }
 
 a{

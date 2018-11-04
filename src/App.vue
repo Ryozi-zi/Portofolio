@@ -60,13 +60,10 @@ body{
   grid-template-columns: 250px 1fr;
 }
 
-.sidebar{
-  text-align: center;
-  grid-column: 1/2;
-  border-right: 2px solid rgba(0, 0, 0, 0.5);
-}
-
 .main{
+  padding: 0 75px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   grid-column: 2/3;
 }
 </style>
