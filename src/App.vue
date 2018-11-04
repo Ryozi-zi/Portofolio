@@ -56,12 +56,12 @@ body{
 }
 
 .container{
-  text-align: center;
   display: grid;
   grid-template-columns: 250px 1fr;
 }
 
 .sidebar{
+  text-align: center;
   grid-column: 1/2;
   border-right: 2px solid rgba(0, 0, 0, 0.5);
 }
