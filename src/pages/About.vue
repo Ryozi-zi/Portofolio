@@ -35,4 +35,12 @@ p{
 .about{
   @include container;
 }
+
+@media (max-width: 480px){
+  .title{
+    display: block;
+    width: 9rem;
+    margin: 0 auto;
+  }
+}
 </style>

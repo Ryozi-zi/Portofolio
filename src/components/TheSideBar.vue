@@ -21,6 +21,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/styles/color.scss';
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 .sidebar{
@@ -48,12 +49,12 @@ a{
   -webkit-transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-out;
   &:hover{
-    background-color: #e0e0e0;
+    background-color: rgba(107, 255, 131, 0.5);
   }
 }
 
 .home{
-  background-color: #fff;
+  background-color: $baseColor;
   font-size: 1.8rem;
   line-height: 2.4rem;
 }

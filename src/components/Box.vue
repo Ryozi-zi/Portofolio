@@ -18,4 +18,10 @@ export default {
 .work-box{
   @include box(300px, 300px);
 }
+
+@media (max-width: 480px){
+  .work-box{
+    margin: 0 auto;
+  }
+}
 </style>

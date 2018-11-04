@@ -20,17 +20,7 @@ export default {
       works: [
         { id: 1,
           name: 'This Portofolio site',
-          content: 'Vue.jsを学びSPAでポートフォリオサイトを作ってみたいと思い作成しました。'},
-        {
-          id: 2,
-          name: 'none',
-          content: 'none'
-        },
-        {
-          id: 3,
-          name: 'none',
-          content: 'none'
-        }
+          content: 'Vue.jsを学びSPAでポートフォリオサイトを作ってみたいと思い作成しました。'}
       ]
     }
   }
@@ -55,5 +45,11 @@ export default {
 
 .title{
   @include title;
+}
+
+@media (max-width: 480px){
+  .works{
+    text-align: center;
+  }
 }
 </style>

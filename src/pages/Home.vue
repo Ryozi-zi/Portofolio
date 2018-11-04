@@ -16,11 +16,17 @@ export default {
 <style lang="scss" scoped>
 .hello{
   padding-top: 3rem;
-  background-color: #fff;
   font-size: 5rem;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   position: absolute;
   left: 50%;
+}
+
+@media (max-width: 480px){
+  .hello{
+    height: 550px;
+    position: static;
+  }
 }
 </style>

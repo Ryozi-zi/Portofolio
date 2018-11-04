@@ -23,6 +23,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import './assets/styles/color.scss';
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -32,7 +34,9 @@ export default {
 
 body{
   height: 100%;
-  margin: 0;
+  width: 100%;
+  margin: 0 0 25px 0;
+  background-color: $baseColor;
 }
 
 .v-enter-active, .v-leave-active{
@@ -65,5 +69,19 @@ body{
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   grid-column: 2/3;
+}
+
+@media (max-width: 480px){
+  .container{
+    display: block;
+  }
+
+  .sidebar{
+    display: none;
+  }
+
+  .main{
+    padding: 0 30px;
+  }
 }
 </style>
