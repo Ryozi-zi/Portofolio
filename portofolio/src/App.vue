@@ -91,7 +91,7 @@ body{
 }
 
 .side-enter{
-  transform: translateX(-100vw);
+  transform: translateX(100vw);
 }
 
 .side-leave-to{
